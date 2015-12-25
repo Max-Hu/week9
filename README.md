@@ -1,3 +1,3 @@
-# PM25 Simple Demo
+# PM25 homework
 
-首先请查阅Skype群获取TOKEN，填写在AirServiceClient.class中，不要忘记交作业哦:-)
+简单实现，还有很多需要改进，奈何时间有限 ╮(╯▽╰)╭
