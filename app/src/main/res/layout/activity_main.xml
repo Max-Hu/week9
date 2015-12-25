@@ -4,20 +4,58 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edit_view_input"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Please input city name" />
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/edit_view_input"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:hint="Please input city name"
+            android:singleLine="true"
+            android:layout_weight="0.62" />
+
+        <Button
+            android:id="@+id/button_query_pm25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_query" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/text_view_pm25"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="28dp" />
 
-    <Button
-        android:id="@+id/button_query_pm25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_query" />
+    <!--<ScrollView android:id="@+id/scrollView"-->
+        <!--android:layout_below="@id/title"-->
+        <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:scrollbarStyle="outsideOverlay">-->
+        <!--<ListView-->
+            <!--android:id="@android:id/list"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:drawSelectorOnTop="false"-->
+            <!--/>-->
+    <!--</ScrollView>-->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            android:weightSum="1">
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+        </LinearLayout>
+
+
 </LinearLayout>
